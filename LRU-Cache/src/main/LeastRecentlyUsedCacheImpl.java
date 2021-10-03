@@ -67,7 +67,7 @@ public class LeastRecentlyUsedCacheImpl {
             .stream()
             .forEachOrdered(p -> cacheImpl.refer(p));
         
-        System.out.println("Pages in cache: " + cacheImpl.cache);
-        System.out.println("Number of page faults: " + faults);
+        System.out.println("Pages in cache: " + cacheImpl.cache); /** Prints [1, 3, 4] */
+        System.out.println("Number of page faults: " + faults);   /** Prints 14 */
     }
 }
